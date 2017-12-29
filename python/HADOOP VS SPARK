@@ -1,0 +1,36 @@
+Both apache spark and hadoop are different tools used for processing of BigData.
+SPARK overcomes the performance issues with HADOOP.
+SPARK- It is a open source cluster computing framework.
+HADOOP undergoes the Batch processing whereas SPARK undergoes real-time data processing with huge data and as well as batch processing in the same framework.
+SPARK  processes 10 times and upto 100 times faster than HADOOP.
+SPARK has less code and HADOOP uses JAVA which has more lines of code.
+There is a spark core component which controls everything.
+It controls SPARK SQL-SPARK streaming-MLib-GraphX
+SPARK specially deals with Data Frames.
+
+SPARK Architecture:
+Driver which has SPARK context splits the data to workers which has executor and assigns the task to them.
+
+SPARK mainly deals with the following key words:
+     -->RDD(Resilient distributed data sets)-which is the core components and which can be re-constructed during the failure.
+     -->Data Frames-SQL,MLib (Databases and machine learning algorithms)
+     -->Dstreams-it is a SPARK streaming API.
+
+SPARK Lifecycle:
+   -->Load data on cluster
+   -->Create RDD
+   -->Do transformation
+   -->Perform action
+   -->Create Data Frame
+   -->Perform queries on Data Frame
+   -->We can run SQL queries on Data Frames
+CAN SPARK REPLACE HADOOP?
+   Even the HADOOP and SPARK can process the data without depending on each other, say HADOOP can process by the MapReduce functions(Batch processing),
+   and SPARK can process the data from external cloud storage, still SPARK can be used above the HADOOP and SPARK is specially designed for HADOOP.
+
+ADVANTAGES OF SPARK OVER HADOOP:
+SPEED-->10 times and upto 100 times faster in usage of in-memory processing.
+MEMORY--> SPARK uses memory where as HADOOP uses local storage(HARD DISK).
+RDD--> SPARK uses RDD for fault rewcovery using lineage whereas HADOOP uses replication of data.
+STREAMING--> SPARK performs a real time processing of data.
+API-->SPARK supports multiple data sources and multiple languages.
